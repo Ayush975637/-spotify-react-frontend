@@ -1,0 +1,68 @@
+/* Header.css */
+header {
+    background-color: #000;
+    color: white;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #1db954; /* Green color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+  }
+  
+  .nav-link:focus {
+    color: #1db954; /* Green color on focus */
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Hover effect for the Premium, Support, Download links */
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Background color on hover */
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
+  /* Hover effect for the Search input */
+  input.form-control:focus {
+    border-color: #1db954; /* Green border on focus */
+    box-shadow: 0 0 5px rgba(29, 185, 84, 0.8); /* Glow effect */
+  }
+  
+  /* Hover effect for the 'Install App' icon */
+  .nav-item span:hover {
+    transform: scale(1.2); /* Slightly enlarge the icon */
+    color: #1db954; /* Green color on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    transform: scale(1.05); /* Slightly enlarge the buttons */
+    transition: transform 0.3s ease;
+  }
+  
+  button.btn-warning:hover {
+    background-color: #1db954; /* Green background on hover */
+    border-color: #1db954; /* Green border on hover */
+  }
+  @media (max-width: 768px) {
+    .navbar-toggler-icon {
+      background-image: none !important;
+    }
+  
+    .navbar-toggler-icon::before {
+      content: '☰'; /* Custom burger icon */
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+  
