@@ -52,7 +52,7 @@ const TermsPage = () => {
       <h3 className="text-xl font-semibold text-blue-700 mb-2">Contact Us</h3>
       <p>
         📧 Email: <a href="mailto:aa7782549@gmail.com" className="text-blue-500 underline">aa7782549@gmail.com</a><br />
-        🌐 Website: <a href="https://spotify-react-frontend.vercel.app/" className="text-blue-500 underline">Sangeet</a>
+        🌐 Website: <a href="https://sangeet-react-frontend.vercel.app/" className="text-blue-500 underline">Sangeet</a>
       </p>
 
       <div className="mt-8 text-sm text-gray-500">
