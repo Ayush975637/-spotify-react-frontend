@@ -22,7 +22,7 @@ const Support = () => {
               <Col md={6}>
                 <Card bg="secondary" text="white" className="h-100 p-3">
                   <h4>Contact Us</h4>
-                  <p>Email: support@spotifyclone.com</p>
+                  <p>Email: support@sangeet.com</p>
                   <p>Phone: +1 (555) 123-4567</p>
                 </Card>
               </Col>

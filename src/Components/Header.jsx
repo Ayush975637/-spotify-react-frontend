@@ -21,8 +21,8 @@ const Header = ({query,setQuery}) => {
           <div className="d-flex align-items-center gap-3" style={{ marginLeft: '-50px' }}>
 
             <a href="/" className="d-flex align-items-center text-white text-decoration-none fs-3" style={{ fontFamily: 'Circular, sans-serif' }}>
-              <FaSpotify size={32} className="me-2 w-6 h-6 md:w-10 md:h-10" />
-              <span className="fw-bold">Spotify</span>
+    
+              <span className="fw-bold">Sangeet</span>
             </a>
             <IoMdHome size={28} title="Home" style={{ cursor: "pointer" }} />
           </div>
@@ -75,6 +75,8 @@ const Header = ({query,setQuery}) => {
               <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/premium')} >Premium</button></li>
               <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/about')} >About</button></li>
               <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/support')} >Support</button></li>
+              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/terms')} >Terms&Conditions</button></li>
+              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/privacy')} >Privacy Policy</button></li>
 
               {/* Vertical Divider */}
               <div style={{

@@ -10,7 +10,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const location = useLocation();
-  const hideLayoutRoutes = ['/login', '/signup','/install','/premium','/support','/about','/search']; // routes where sidebar/header should be hidden
+  const hideLayoutRoutes = ['/login', '/signup','/install','/premium','/support','/about','/search','/terms','/privacy']; // routes where sidebar/header should be hidden
   const shouldHideLayout = hideLayoutRoutes.includes(location.pathname);
 
   const [currentSong, setCurrentSong] = useState(null);
@@ -66,4 +66,3 @@ function App() {
 }
 
 export default App;
-

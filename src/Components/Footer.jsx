@@ -1,11 +1,21 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate=useNavigate();
   return (
     <footer
       className="pt-5 px-4"
       style={{ backgroundColor: '#121212', color: '#b3b3b3', fontSize: '14px' }}
     >
+                    <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/terms')} >Terms&Conditions</button></li>
+              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/privacy')} >Privacy Policy</button></li>
+       <Link href="/terms" className="text-sm text-gray-600 hover:text-blue-600">
+  Terms & Conditions
+</Link>
+<br />
+<br />
+<Link href="/privacy">Privacy Policy</Link>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 mb-4">
         <div className="col mb-3">
           <h5 className="text-white">Company</h5>
@@ -56,7 +66,7 @@ const Footer = () => {
 
         </div>
         <div className="col mb-3">
-          <h5 className="text-white">Spotify plans</h5>
+          <h5 className="text-white">Sangeet plans</h5>
           <ul className="nav flex-column">
   <li className="nav-item mb-2">
     <a href="#" className="nav-link p-0 text-light">Premium Individual</a>
@@ -97,6 +107,11 @@ const Footer = () => {
           <li><a className="text-muted" href="#"><i className="bi bi-twitter fs-5"></i></a></li>
         </ul>
       </div>
+      <Link href="/terms" className="text-sm text-gray-600 hover:text-blue-600">
+  Terms & Conditions
+</Link>
+<Link href="/privacy">Privacy Policy</Link>
+
     </footer>
   );
 };

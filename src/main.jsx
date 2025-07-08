@@ -17,6 +17,8 @@ import Premium from './pages/Premium.jsx';
 import InstallApp from './pages/Install.jsx';
 import Support from './pages/support.jsx';
 import About from './pages/about.jsx';
+import TermsPage from './pages/terms.jsx';
+import PrivacyPolicy from './pages/privacy.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +34,8 @@ const router = createBrowserRouter([
       { path: '/support', element: <Support /> },
       { path: '/install', element: <InstallApp /> },
       { path: '/about', element: <About /> },
+      { path: '/terms', element: <TermsPage /> },
+      { path: '/privacy', element: <PrivacyPolicy /> },
     ]
     
   }

@@ -43,7 +43,7 @@ const About = () => {
   ];
 
   return (
-    <Container className="py-5 about-page">
+    <Container className="py-5 about-page ">
       {/* Hero Section */}
       <Row className="justify-content-center mb-5">
         <Col md={10} className="text-center">
@@ -53,7 +53,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="text-white mb-3"
           >
-            About Spotify Clone
+            About Sangeet
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
