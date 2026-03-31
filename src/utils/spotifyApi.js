@@ -1,13 +1,4 @@
-// import axios from "axios";
 
-// const API = axios.create({
-//   baseURL: "https://api.example.com", // replace with your real API
-// });
-
-// // You can also set Authorization token here if needed
-// // API.defaults.headers.common['Authorization'] = 'Bearer your-token';
-
-// export default API;
 import axios from "axios";
 import { getSpotifyAccessToken } from "../utils/spotifyAuth";
 

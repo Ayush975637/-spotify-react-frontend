@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { IoMdHome } from "react-icons/io";
 import { FaSpotify } from "react-icons/fa";
 import { FaSearch } from "react-icons/fa";
-import { GrInstallOption } from "react-icons/gr";
+import { FaMusic } from "react-icons/fa6";
+
 import { BsBrowserChrome } from "react-icons/bs";
 import './Header.css';
 
@@ -18,13 +19,14 @@ const Header = ({query,setQuery}) => {
         <div className="d-flex flex-wrap align-items-center justify-content-between">
           
           {/* Left: Logo & Icons */}
-          <div className="d-flex align-items-center gap-3" style={{ marginLeft: '-50px' }}>
+          <div className="d-flex align-items-center gap-4" style={{ marginLeft: '5px' }}>
 
-            <a href="/" className="d-flex align-items-center text-white text-decoration-none fs-3" style={{ fontFamily: 'Circular, sans-serif' }}>
-    
-              <span className="fw-bold">Sangeet</span>
+            <a href="/" className="d-flex align-items-center text-white text-decoration-none fs-3 gap-2" style={{ fontFamily: 'Circular, sans-serif' }}>
+    <span><FaMusic></FaMusic></span>
+  <span>Sangeet</span>
+             
             </a>
-            <IoMdHome size={28} title="Home" style={{ cursor: "pointer" }} />
+            
           </div>
 
           {/* Middle: Search */}
@@ -46,7 +48,7 @@ const Header = ({query,setQuery}) => {
               <input
                 type="text"
                 className="form-control ps-5 pe-5 bg-dark text-white custom-placeholder"
-                placeholder="What do you want to play?"
+                placeholder="What do you want to play"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 style={{
@@ -72,30 +74,13 @@ const Header = ({query,setQuery}) => {
           {/* Right: Nav Links and Buttons */}
           <div className="d-flex align-items-center gap-3">
             <ul className="nav me-3">
-              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/premium')} >Premium</button></li>
-              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/about')} >About</button></li>
-              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/support')} >Support</button></li>
-              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/terms')} >Terms&Conditions</button></li>
-              <li>  <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/privacy')} >Privacy Policy</button></li>
-
-              {/* Vertical Divider */}
-              <div style={{
-                width: '1px',
-                height: '30px',
-                backgroundColor: 'white',
-                margin: '0 15px',
-              }} />
-
+              
              
-              <li> <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/install')} >  <span><GrInstallOption size={25} title="Install App" style={{ cursor: "pointer" }} 
-               
-                /></span> Install App</button></li>
+             
+              
             </ul>
 
-            <div className="text-end">
-              <button type="button" className="btn btn-outline-light me-2" onClick={() => navigate('/login')} >Login</button>
-              <button type="button" className="btn btn-warning Sign" onClick={() => navigate('/signup')}>Sign up</button>
-            </div>
+            
           </div>
 
         </div>
